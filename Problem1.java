@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Calculator {
     public static double add(double a, double b) { return a + b; }
     public static double subtract(double a, double b) { return a - b; }
@@ -8,7 +7,6 @@ class Calculator {
         if (b == 0) throw new ArithmeticException("Division by zero");
         return a / b;
     }
-
     public static double operate(double a, double b, String operation) {
         String op = operation.trim().toLowerCase();
         switch (op) {
@@ -25,14 +23,12 @@ class Calculator {
         }
     }
 }
-
 public class Problem1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("=== Simple Calculator ===");
         System.out.println("Type '+' '-' '*' '/' or words like 'add', 'subtract'");
         System.out.println("Type 'exit' to quit.\n");
-
         while (true) {
             try {
                 System.out.print("Enter first number: ");
